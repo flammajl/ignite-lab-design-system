@@ -3,7 +3,7 @@ name: Deplay Storybook
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
