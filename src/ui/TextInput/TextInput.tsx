@@ -21,7 +21,9 @@ export type TTextInputIcon = {
 };
 
 function TextInputIcon({ children }: TTextInputIcon) {
-  return <Slot className='w-6 h-6 text-gray-400'>{children}</Slot>;
+  return (
+    <Slot className='w-6 h-6 text-gray-400 svg-input_focus'>{children}</Slot>
+  );
 }
 
 TextInputIcon.displayName = 'TextInput.Icon';

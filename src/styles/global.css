@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@layer components {
+  .svg-input_focus:has(+ input:focus),
+  .svg-input_focus:has(+ input:valid) {
+    @apply text-cyan-300;
+  }
+}
